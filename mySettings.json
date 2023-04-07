@@ -1,0 +1,14 @@
+[
+  {
+    "label":"first tab",
+    "name":"index",
+    "path":"./src/index.ts",
+    "template":"src/custom.html"
+  },
+  {
+    "label":"second tab",
+    "name":"index2",
+    "path":"./src/index2.ts",
+    "template":"src/custom2.html"
+  }  
+]
