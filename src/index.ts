@@ -25,7 +25,8 @@ function init() {
   }
 
   // init entities
-  for (let a = 0; a < 200; a++) {
+  /*
+  for (let a = 0; a < 50; a++) {
     entityList.push({
       position: {
         x: random(50, 750),
@@ -37,7 +38,7 @@ function init() {
       },
       radius: random(10, 15)
     })
-  }
+  }*/
 
   entityList.push({
     position: {
@@ -204,7 +205,7 @@ function broadPhase() {
   for (let a = 0; a < entityList.length; a++) {
     const entity = entityList[a]
     if (entity.node) {
-      const walk = (walker: basicEntity | null) => { // function for walking
+      const walk = (walker: basicEntity | null) => { // function for walking trough one grid tile
         while (walker) {
           const distance = subtract(entity.position, walker.position)
           if (Math.abs(distance.x) <= entity.radius + walker.radius && Math.abs(distance.y) <= entity.radius + walker.radius) {

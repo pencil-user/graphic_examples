@@ -25,7 +25,7 @@ export interface DoublyLinkedListNode<T> {
   prev: DoublyLinkedListNode<T> | null
   next: DoublyLinkedListNode<T> | null
 }
-export function clamp (num:number, min:number, max:number) {return Math.min(Math.max(num, min), max)};
+export function clamp(num: number, min: number, max: number) { return Math.min(Math.max(num, min), max) };
 
 
 export function random(a: number, b: number) {
@@ -47,6 +47,15 @@ export function dotProduct(a: vector2D, b: vector2D): number {
 export function unitVector(a: vector2D): vector2D {
   const len = Math.sqrt(a.x ** 2 + a.y ** 2)
   return { x: a.x / len, y: a.y / len }
+}
+
+export function length(a: vector2D): number {
+  return Math.sqrt(a.x ** 2 + a.y ** 2)
+}
+
+export function lerp(a: vector2D, b: vector2D, amount: number): vector2D {
+  return { x: (a.x + (b.x - a.x) * amount), y: a.y + (b.y - b.y) * amount }
+
 }
 /*
 export function makeDoublyLinkedList<T>(data: T) {

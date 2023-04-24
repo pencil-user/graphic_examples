@@ -10,5 +10,11 @@
     "name":"index2",
     "path":"./src/index2.ts",
     "template":"src/custom2.html"
+  },
+  {
+    "label":"third tab",
+    "name":"index3",
+    "path":"./src/index3.ts",
+    "template":"src/custom3.html"
   }  
 ]
