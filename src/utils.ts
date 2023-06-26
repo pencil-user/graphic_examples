@@ -15,6 +15,13 @@ export interface basicEntity {
   }
 }
 
+export interface gridNode {
+  prev: gridNode | null
+  next: gridNode | null
+  gridX: number
+  gridY: number
+}
+
 export interface LinkedListNode<T> {
   data: T
   next: LinkedListNode<T> | null

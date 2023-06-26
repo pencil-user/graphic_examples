@@ -1,20 +1,38 @@
 [
   {
-    "label":"first tab",
-    "name":"index",
-    "path":"./src/index.ts",
-    "template":"src/custom.html"
+    "label": "index simple",
+    "name": "index",
+    "path": "./src/index.ts",
+    "template": "src/custom.html"
   },
   {
-    "label":"second tab",
-    "name":"index2",
-    "path":"./src/index2.ts",
-    "template":"src/custom2.html"
+    "label": "index complete",
+    "name": "indexComplete",
+    "path": "./src/indexComplete.ts",
+    "template": "src/custom.html"
   },
   {
-    "label":"third tab",
-    "name":"index3",
-    "path":"./src/index3.ts",
-    "template":"src/custom3.html"
-  }  
+    "label": "Three Simple",
+    "name": "ThreeSimple",
+    "path": "./src/ThreeSimple.ts",
+    "template": "src/customThree.html"
+  },
+  {
+    "label": "Three Transform",
+    "name": "ThreeTransform",
+    "path": "./src/ThreeTransform.ts",
+    "template": "src/customThree2.html"
+  },
+  {
+    "label": "Three Rotation",
+    "name": "ThreeRotate",
+    "path": "./src/ThreeRotate.ts",
+    "template": "src/customThree3.html"
+  },
+  {
+    "label": "Three Material",
+    "name": "ThreeMaterial",
+    "path": "./src/ThreeMaterial.ts",
+    "template": "src/customThree.html"
+  }
 ]
